@@ -58,6 +58,8 @@ calico:
   felixHealthEnabled: true
   # Enable prometheus metrics
   felixPrometheusMetricsEnabled: true
+  # The Prometheus metrics server should bind to (default to all addresses).
+  felixPrometheusMetricsHost: ''
   # Disable XDP Acceleration as we do not support it with our ubi7 base image
   felixXDPEnabled: false
   # Whether or not to masquerade traffic to destinations not within
